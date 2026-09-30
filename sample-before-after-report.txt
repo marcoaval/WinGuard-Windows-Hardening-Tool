@@ -1,0 +1,30 @@
+WinGuard Security Report - Sample Lab Result
+
+===== BEFORE =====
+Microsoft Security Baseline: 8 of 10 passing
+Advanced hardening: 0 of 5 passing
+Security score: 53 / 100 (NEEDS WORK)
+
+Observed failures included:
+- NTLM hardened (LmCompatibilityLevel = 5)
+- Minimum password length 14 or more
+- Defender PUA protection
+- ASR: block Office child processes
+- PowerShell script block logging
+- LSA protection (RunAsPPL)
+- BitLocker on system drive
+
+===== AFTER =====
+Microsoft Security Baseline: 10 of 10 passing
+Advanced hardening: 4 of 5 passing
+Security score: 93 / 100 (STRONG)
+
+Remediated:
+- NTLM hardened (LmCompatibilityLevel = 5)
+- Minimum password length 14 or more
+- Defender PUA protection
+- ASR: block Office child processes
+- PowerShell script block logging
+- LSA protection (RunAsPPL)
+
+BitLocker remained off because this control is audit only in the tool.
